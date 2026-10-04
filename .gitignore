@@ -1,0 +1,42 @@
+# ==========================================
+# Local .terraform directories & modules
+# ==========================================
+# Contains downloaded provider plugins and modules.
+# These should be pulled fresh on each environment via 'terraform init'.
+.terraform/
+.terraform.lock.hcl
+
+# ==========================================
+# State Files & Backups
+# ==========================================
+# State files contain sensitive infrastructure metadata and plain-text secrets.
+# NEVER commit state files to source control; use a remote backend (e.g., S3, Terraform Cloud).
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Crash logs
+crash.log
+crash.*.log
+
+# ==========================================
+# Sensitive Variable Files & Overrides
+# ==========================================
+# Variable definitions that contain API keys, passwords, or local credentials.
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration and user credentials
+.terraformrc
+terraform.rc
+
+# ==========================================
+# Miscellaneous / OS / Course Files
+# ==========================================
+# Ignore presentation files, PDFs, and OS metadata
+.DS_Store
+Thumbs.db
